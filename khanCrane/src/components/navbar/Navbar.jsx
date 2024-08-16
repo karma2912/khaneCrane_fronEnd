@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import kcLogo from "./khanCraneLogo.webp"
 const Navbar = () => {
     const [toggle,setToggle] = useState(false)
     const toggleButton=()=>{
@@ -19,8 +19,8 @@ const Navbar = () => {
                 <div>9561829120</div>
               </div>
             </div>
-            <div className="text-lg font-semibold">Khan Crane</div>
-            <button className="md:flex hidden border-2 p-1 rounded-xl bg-yellow-300 text-lg">
+            <div className="text-2xl font-semibold flex gap-3 items-center"><img src={kcLogo} className="h-16 w-16"></img>Khan Crane</div>
+            <button className="md:flex justify-center items-center hidden border-2 border-yellow-500 w-28 bg-yellow-500 text-lg">
               Profile
             </button>
             <button className="text-xl md:hidden flex" onClick={toggleButton}><i class="fa-solid fa-bars"></i></button>
@@ -35,7 +35,7 @@ const Navbar = () => {
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             <div className="hidden text-lg font-semibold w-2/4 justify-between items-center md:flex">
-              <div>Home</div>
+              <div className="text-yellow-500">Home</div>
               <div>Services</div>
               <div>About Us</div>
               <div>Contact</div>
