@@ -25,7 +25,7 @@ const Page3 = () => {
             <div className="pt-10"></div>
           </div>
         </div>
-        <div className="w-3/4 flex md:flex-row flex-col justify-around items-center">
+        <div className="md:w-3/4 w-11/12 flex md:flex-row flex-col justify-around items-center">
           <div className="flex flex-col items-center md:pb-10 pb-16">
             <img src={faranaCrane} className="h-[28rem] w-[25rem] shadow-2xl border-2 border-yellow-500"></img>
             <div className="h-[10rem] w-4/5 bg-white -mt-10 flex flex-col justify-between items-center shadow-2xl">
