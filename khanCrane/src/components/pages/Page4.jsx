@@ -39,7 +39,7 @@ const Page4 = () => {
             <img src={crane3} className="md:w-[30rem] w-full p-5"></img>
           </div>
         </div>
-        <div className="flex md:flex-row flex-col justify-center md:items-end items-center">
+        <div className="flex md:flex-row flex-col justify-center md:items-end items-center mb-10">
           <div>
             <img src={crane4} className="md:w-[30rem] w-full p-5"></img>
           </div>

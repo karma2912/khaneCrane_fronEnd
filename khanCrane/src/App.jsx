@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './components/footer/Footer'
 import Navbar from './components/navbar/Navbar'
 import Page1 from './components/pages/Page1'
 import Page2 from './components/pages/Page2'
@@ -14,6 +15,7 @@ function App() {
      <Page2/>
      <Page3/>
      <Page4/>
+     <Footer/>
     </>
   )
 }
