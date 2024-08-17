@@ -28,26 +28,26 @@ const Page4 = () => {
             <div className="pt-10"></div>
           </div>
         </div>
-        <div className="flex justify-center items-start">
+        <div className="flex md:flex-row flex-col justify-center md:items-start items-center">
           <div>
-            <img src={crane1} className="w-[30rem] p-5"></img>
+            <img src={crane1} className="md:w-[30rem] w-full p-5"></img>
           </div>
           <div>
-            <img src={crane2} className="h-[30rem] p-5"></img>
+            <img src={crane2} className="h-[30rem] w-full p-5"></img>
           </div>
           <div>
-            <img src={crane3} className="w-[30rem] p-5"></img>
+            <img src={crane3} className="md:w-[30rem] w-full p-5"></img>
           </div>
         </div>
-        <div className="flex justify-center items-end">
+        <div className="flex md:flex-row flex-col justify-center md:items-end items-center">
           <div>
-            <img src={crane4} className="w-[30rem] p-5"></img>
+            <img src={crane4} className="md:w-[30rem] w-full p-5"></img>
           </div>
           <div>
-            <img src={crane5} className="h-[30rem] p-5"></img>
+            <img src={crane5} className="h-[30rem] w-full p-5"></img>
           </div>
           <div>
-            <img src={crane6} className="w-[30rem] p-5"></img>
+            <img src={crane6} className="md:w-[30rem] w-full p-5"></img>
           </div>
         </div>
       </div>
