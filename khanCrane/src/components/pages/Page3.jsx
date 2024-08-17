@@ -61,7 +61,7 @@ const Page3 = () => {
           </div>
         </div>
         <div>
-          <button className="border-2 font-semibold text-base border-yellow-500 bg-yellow-500 w-36 h-14 text-white shadow-2xl">
+          <button className="border-2 font-semibold text-base mb-10 border-yellow-500 bg-yellow-500 w-36 h-14 text-white shadow-2xl">
             MORE SERVICES
           </button>
         </div>
