@@ -6,7 +6,7 @@ import forkLift from "./forkLift.webp";
 const Page3 = () => {
   return (
     <>
-      <div className="min-h-[68rem] w-full bg-gray-100 flex flex-col justify-around items-center">
+      <div className="min-h-[68rem] w-full bg-gray-100 flex flex-col justify-around items-center text-white" style={{backgroundColor: "#1b273a"}}>
         <div className="md:text-center text-start">
           <div className="relative flex flex-col justify-center ">
             <div className="text-base pt-20 pl-6">
@@ -27,8 +27,8 @@ const Page3 = () => {
         </div>
         <div className="md:w-3/4 w-11/12 flex md:flex-row flex-col justify-around items-center">
           <div className="flex flex-col items-center md:pb-10 pb-16">
-            <img src={faranaCrane} className="h-[28rem] w-[25rem] shadow-2xl border-2 border-yellow-500"></img>
-            <div className="h-[10rem] w-4/5 bg-white -mt-10 flex flex-col justify-between items-center shadow-2xl">
+            <img src={faranaCrane} className="h-[28rem] w-[25rem] shadow-md shadow-white border-4 border-yellow-500"></img>
+            <div className="h-[10rem] w-4/5 bg-white -mt-10 flex flex-col border-2 justify-between items-center text-black">
               <div className="h-full flex flex-col justify-evenly items-center text-xl font-semibold">Farana Crane
                 <div className="text-base font-normal">Use for lifting Heavy objects</div>
               </div>
@@ -38,8 +38,8 @@ const Page3 = () => {
             </div>
           </div>
           <div className="flex flex-col items-center md:pb-10 pb-16">
-            <img src={forkLift} className="h-[28rem] w-[25rem] shadow-2xl border-2 border-yellow-500"></img>
-            <div className="h-[10rem] w-4/5 bg-white -mt-10 flex flex-col justify-between items-center shadow-2xl">
+            <img src={forkLift} className="h-[28rem] w-[25rem] shadow-md shadow-white border-4 border-yellow-500"></img>
+            <div className="h-[10rem] w-4/5 bg-white -mt-10 flex flex-col border-2 justify-between items-center text-black">
               <div className="h-full flex flex-col justify-evenly items-center text-xl font-semibold">ForkLift Crane
                 <div className="text-base font-normal">Use for lifting Heavy objects</div>
               </div>
@@ -49,8 +49,8 @@ const Page3 = () => {
             </div>
           </div>
           <div className="flex flex-col items-center md:pb-10 pb-16">
-            <img src={building1} className="h-[28rem] w-[25rem] shadow-2xl border-2 border-yellow-500"></img>
-            <div className="h-[10rem] w-4/5 bg-white -mt-10 flex flex-col justify-between items-center shadow-2xl">
+            <img src={building1} className="h-[28rem] w-[25rem] shadow-md shadow-white border-4 border-yellow-500"></img>
+            <div className="h-[10rem] w-4/5 bg-white -mt-10 flex flex-col border-2 justify-between items-center  text-black">
               <div className="h-full flex flex-col justify-evenly items-center text-xl font-semibold">Hydra Crane
                 <div className="text-base font-normal">Use for lifting Heavy objects</div>
               </div>
