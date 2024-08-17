@@ -12,7 +12,7 @@ const Navbar = () => {
           <div className=" upper flex justify-between items-center p-2">
             <div className="md:flex justify-around items-center w-[13rem] hidden">
               <div className="text-3xl">
-                <i class="fa-solid fa-phone-volume"></i>
+                <i className="fa-solid fa-phone-volume"></i>
               </div>
               <div>
                 <div className="text-base">Online Appointment :</div>
@@ -23,16 +23,16 @@ const Navbar = () => {
             <button className="md:flex justify-center items-center hidden border-2 border-yellow-500 w-28 bg-yellow-500 text-lg">
               Profile
             </button>
-            <button className="text-xl md:hidden flex" onClick={toggleButton}><i class="fa-solid fa-bars"></i></button>
+            <button className="text-xl md:hidden flex" onClick={toggleButton}><i className="fa-solid fa-bars"></i></button>
           </div>
           <hr />
           <div className="lower flex justify-between items-center p-2 z-0">
             <div className="flex  md:w-[8rem] w-full h-6 justify-between items-center text-sm">
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-meta"></i>
-              <i class="fa-brands fa-youtube"></i>
-              <i class="fa-brands fa-x-twitter"></i>
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <i className="fa-brands fa-instagram"></i>
+              <i className="fa-brands fa-meta"></i>
+              <i className="fa-brands fa-youtube"></i>
+              <i className="fa-brands fa-x-twitter"></i>
+              <i className="fa-solid fa-magnifying-glass"></i>
             </div>
             <div className="hidden text-lg font-semibold w-2/4 justify-between items-center md:flex">
               <div className="text-yellow-500">Home</div>
