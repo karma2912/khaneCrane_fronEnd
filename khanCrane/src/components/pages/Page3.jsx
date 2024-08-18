@@ -33,7 +33,7 @@ const Page3 = () => {
                 <div className="text-base font-normal">Use for lifting Heavy objects</div>
               </div>
               <div className="w-full">
-              <button className="h-12 w-full border-2 border-gray-200 shadow-2xl font-semibold flex justify-center gap-4 items-center">LEARN MORE<i class="fa-solid fa-arrow-right"></i></button>
+              <button className="h-12 w-full border-2 border-gray-200 shadow-2xl font-semibold flex justify-center gap-4 items-center">LEARN MORE<i className="fa-solid fa-arrow-right"></i></button>
               </div>
             </div>
           </div>
@@ -44,7 +44,7 @@ const Page3 = () => {
                 <div className="text-base font-normal">Use for lifting Heavy objects</div>
               </div>
               <div className="w-full">
-              <button className="h-12 w-full border-2 border-gray-200 shadow-2xl font-semibold flex justify-center gap-4 items-center">LEARN MORE<i class="fa-solid fa-arrow-right"></i></button>
+              <button className="h-12 w-full border-2 border-gray-200 shadow-2xl font-semibold flex justify-center gap-4 items-center">LEARN MORE<i className="fa-solid fa-arrow-right"></i></button>
               </div>
             </div>
           </div>
@@ -55,7 +55,7 @@ const Page3 = () => {
                 <div className="text-base font-normal">Use for lifting Heavy objects</div>
               </div>
               <div className="w-full">
-                <button className="h-12 w-full border-2 border-gray-200 shadow-2xl font-semibold flex justify-center gap-4 items-center">LEARN MORE<i class="fa-solid fa-arrow-right"></i></button>
+                <button className="h-12 w-full border-2 border-gray-200 shadow-2xl font-semibold flex justify-center gap-4 items-center">LEARN MORE<i className="fa-solid fa-arrow-right"></i></button>
               </div>
             </div>
           </div>
