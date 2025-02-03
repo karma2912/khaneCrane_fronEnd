@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import kcLogo from "./khanCraneLogo.webp";
+import WhatsApp from "./Whatsapp";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const toggleButton = () => {
@@ -73,7 +74,7 @@ const Navbar = () => {
           )}
           <div className="lower flex justify-between items-center p-2">
             <div className="flex  md:w-[8rem] w-full h-6 justify-between items-center text-sm">
-              <i className="fa-brands fa-instagram"></i>
+              <WhatsApp/>
               <i className="fa-brands fa-meta"></i>
               <i className="fa-brands fa-youtube"></i>
               <i className="fa-brands fa-x-twitter"></i>
