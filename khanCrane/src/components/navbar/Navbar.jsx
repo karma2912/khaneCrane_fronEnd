@@ -74,7 +74,7 @@ const Navbar = () => {
             </div>
           )}
           <div className="lower flex justify-between items-center p-2">
-            <div className="flex  md:w-[8rem] w-full h-6 justify-between items-center text-sm">
+            <div className="flex  md:w-[10rem] w-full h-6 justify-between items-center text-sm">
               <WhatsApp/>
               <i className="fa-brands fa-meta"></i>
               <i className="fa-brands fa-youtube"></i>
