@@ -1,7 +1,7 @@
 import React from "react";
 
 const WhatsApp = () => {
-  const phoneNumber = "9561829120"; // Replace with your WhatsApp number (include country code, e.g., 91 for India)
+  const phoneNumber = "9821661352"; // Replace with your WhatsApp number (include country code, e.g., 91 for India)
   const whatsappLink = `https://wa.me/${phoneNumber}`;
 
   return (
