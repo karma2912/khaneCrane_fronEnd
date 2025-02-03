@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import kcLogo from "./khanCraneLogo.webp";
 import WhatsApp from "./Whatsapp";
+import Call from "./Call";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const toggleButton = () => {
@@ -77,7 +78,7 @@ const Navbar = () => {
               <WhatsApp/>
               <i className="fa-brands fa-meta"></i>
               <i className="fa-brands fa-youtube"></i>
-              <i className="fa-brands fa-x-twitter"></i>
+              <Call/>
             </div>
             <div className="hidden text-lg font-semibold w-2/4 justify-between items-center md:flex">
               <div>
