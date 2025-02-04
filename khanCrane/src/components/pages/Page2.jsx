@@ -67,8 +67,8 @@ const Page2 = () => {
           isVisible ? "translate-x-0" : "-translate-x-10"
         }`}
       >
-        <div className="relative flex flex-col md:pl-40 pl-6 justify-center">
-          <div className="text-lg pt-20">
+        <div className="relative flex flex-col md:pl-40  justify-center">
+          <div className="text-lg pt-20 pl-6">
             INTRODUCTION OF US
             <div className="pt-6 gap-5">
               <div className="text-5xl font-bold flex gap-5">

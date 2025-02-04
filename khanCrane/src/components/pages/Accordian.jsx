@@ -101,7 +101,7 @@ const Accordion = () => {
           } overflow-hidden transition-all duration-500 ease-in-out`}
         >
           <div className="p-5 border border-gray-200 bg-white">
-            <p className="text-gray-600">
+            <div className="text-gray-600">
               At Khan Cranes, we provide a wide range of services to meet all your heavy lifting and transportation needs. Our services include:
               <ul className="list-disc list-inside mt-2">
                 <li><strong>Crane on Hire</strong>: Flexible rental options for all types of cranes.</li>
@@ -110,7 +110,7 @@ const Accordion = () => {
                 <li><strong>Hydraulic Crane on Hire</strong>: Heavy-duty hydraulic cranes for complex lifting operations.</li>
                 <li><strong>JCB on Hire</strong>: Reliable JCB services for excavation and material handling.</li>
               </ul>
-            </p>
+            </div>
           </div>
         </div>
 
