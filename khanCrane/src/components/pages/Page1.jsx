@@ -1,26 +1,58 @@
-import React from 'react'
-import khanCrane from './khanCrane1.jpg'
+import React, { useEffect } from 'react';
+import khanCrane from './khanCrane1.jpg';
 
 const Page1 = () => {
-  return (
-    <>
-    <div className='h-[48rem] w-full text-white flex justify-end' style={{backgroundColor: "#1b273a"}}>
-        <div className=' relative flex flex-col md:pl-40 pl-12 justify-center '>
-            <div className='text-lg pt-20'>CRANE BUSINESS
-                <div className='pt-6 gap-5'>
-                <div className='text-7xl font-bold flex gap-5'><div className=' w-1 bg-yellow-500'></div>WE OFFER <br/>GREAT SERVICE</div>
-                </div>
-                <div className='text-base pt-4'>We rent our cranes for all needs of services required. You can have <br/> your own driver to drive the crane or we can send from our sector <br/> We have various types of cranes suitable for your work in the most Affordable <br/> prices in the whole market
-                </div>
-            </div>
-            <div className='pt-10'>
-            <button className='border-2 border-yellow-500 bg-yellow-500 w-36 h-14 text-white'>LEARN MORE</button>
-            </div>
-        </div>
-        <div><img src={khanCrane} className='md:h-full h-0' style={{clipPath:'polygon(0 0,100% 0,100% 100%,25% 100%'}}></img></div>
-    </div>
-    </>
-  )
-}
+  useEffect(() => {
+    const textElements = document.querySelectorAll('.animate-fade-in');
+    const imageElement = document.querySelector('.animate-slide-in');
+    
+    setTimeout(() => {
+      textElements.forEach((element) => {
+        element.classList.remove('opacity-0');
+        element.classList.add('opacity-100');
+      });
+      imageElement.classList.remove('translate-x-10', 'opacity-0');
+      imageElement.classList.add('translate-x-0', 'opacity-100');
+    }, 100);
+  }, []);
 
-export default Page1
+  return (
+    <div className='h-[48rem] w-full text-white flex justify-end overflow-hidden' style={{ backgroundColor: "#1b273a" }}>
+      {/* Text Section */}
+      <div className='relative flex flex-col md:pl-40 pl-12 justify-center'>
+        <div className='text-lg pt-20 animate-fade-in opacity-0 transition-opacity duration-1000'>
+          CRANE BUSINESS
+          <div className='pt-6 gap-5'>
+            <div className='text-7xl font-bold flex gap-5 animate-fade-in opacity-0 transition-opacity duration-1000 delay-200'>
+              <div className='w-1 bg-yellow-500'></div>
+              WE OFFER <br /> GREAT SERVICE
+            </div>
+          </div>
+          <div className='text-base pt-4 animate-fade-in opacity-0 transition-opacity duration-1000 delay-500'>
+            We rent our cranes for all needs of services required. You can have <br />
+            your own driver to drive the crane or we can send from our sector <br />
+            We have various types of cranes suitable for your work at the most affordable <br />
+            prices in the whole market.
+          </div>
+        </div>
+        <div className='pt-10 animate-fade-in opacity-0 transition-opacity duration-1000 delay-700'>
+          <button className='border-2 border-yellow-500 bg-yellow-500 w-36 h-14 text-white hover:bg-yellow-600 transition-colors duration-300'>
+            LEARN MORE
+          </button>
+        </div>
+      </div>
+
+      {/* Image Section */}
+      <div>
+        <img
+          src={khanCrane}
+          className='md:h-full h-0 animate-slide-in transform translate-x-10 opacity-0 transition-all duration-1000 ease-in-out max-w-full'
+          style={{ clipPath: 'polygon(0 0,100% 0,100% 100%,25% 100%)' }}
+          alt="Crane"
+        />
+      </div>
+    </div>
+  );
+};
+
+export default Page1;

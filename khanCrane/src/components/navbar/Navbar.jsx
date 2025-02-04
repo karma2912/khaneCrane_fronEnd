@@ -25,8 +25,8 @@ const Navbar = () => {
             <div className="text-2xl font-semibold flex gap-3 items-center">
               <img src={kcLogo} className="h-16 w-16"></img>Khan Crane
             </div>
-            <button className="md:flex justify-center items-center hidden border-2 border-yellow-500 w-28 bg-yellow-500 text-lg">
-              Profile
+            <button className="md:flex justify-center items-center p-2 hidden border-2 font-semibold border-yellow-500 w-32 rounded-lg bg-yellow-500 text-lg">
+              Appointment
             </button>
             <button className="text-xl md:hidden flex" onClick={toggleButton}>
               <i className="fa-solid fa-bars"></i>
