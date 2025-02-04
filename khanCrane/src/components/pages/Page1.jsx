@@ -36,7 +36,7 @@ const Page1 = () => {
           </div>
         </div>
         <div className='pt-10 animate-fade-in opacity-0 transition-opacity duration-1000 delay-700'>
-          <button className='border-2 border-yellow-500 bg-yellow-500 w-36 h-14 text-white hover:bg-yellow-600 transition-colors duration-300'>
+          <button className='border-2 border-yellow-500 bg-yellow-500 w-36 h-14 rounded-lg text-white hover:bg-yellow-600 transition-colors duration-300'>
             LEARN MORE
           </button>
         </div>
