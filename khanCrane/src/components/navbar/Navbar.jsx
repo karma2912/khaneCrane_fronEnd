@@ -19,15 +19,15 @@ const Navbar = () => {
               </div>
               <div>
                 <div className="text-base">Online Appointment :</div>
-                <div>9561829120</div>
+                <div>9821661352</div>
               </div>
             </div>
             <div className="text-2xl font-semibold flex gap-3 items-center">
               <img src={kcLogo} className="h-16 w-16"></img>Khan Crane
             </div>
-            <button className="md:flex justify-center text-gray-800 items-center p-2 hidden border-2 font-semibold border-yellow-500 w-32 rounded-lg bg-yellow-500 transition-colors duration-300 hover:bg-yellow-600 text-lg">
+            <Link className="md:flex justify-center text-gray-800 items-center p-2 hidden border-2 font-semibold border-yellow-500 rounded-lg bg-yellow-500 transition-colors duration-300 hover:bg-yellow-600 text-lg" to='/contact'>
               Appointment
-            </button>
+            </Link>
             <button className="text-xl md:hidden flex" onClick={toggleButton}>
               <i className="fa-solid fa-bars"></i>
             </button>

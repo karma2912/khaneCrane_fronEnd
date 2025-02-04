@@ -2,11 +2,12 @@ import React from "react";
 import building1 from "./hydraCrane2.webp";
 import faranaCrane from "./faranaCrane.jpg";
 import forkLift from "./forkLift.webp";
+import { Link } from "react-router-dom";
 
 const Page3 = () => {
   return (
     <>
-      <div className="min-h-[68rem] w-full bg-gray-100 flex flex-col justify-around items-center text-white" style={{backgroundColor: "#1b273a"}}>
+      <div className="md:min-h-[68rem] min-h-[150rem] w-full bg-gray-100 flex flex-col justify-evenly items-center text-white" style={{backgroundColor: "#1b273a"}}>
         <div className="md:text-center text-start">
           <div className="relative flex flex-col justify-center ">
             <div className="text-base pt-20 pl-6">
@@ -33,7 +34,7 @@ const Page3 = () => {
                 <div className="text-base font-normal">Use for lifting Heavy objects</div>
               </div>
               <div className="w-full">
-              <button className="h-12 w-full border-2 border-gray-200 shadow-2xl font-semibold flex justify-center gap-4 items-center">LEARN MORE<i className="fa-solid fa-arrow-right"></i></button>
+              <Link className="h-12 w-full border-2 border-gray-200 shadow-2xl font-semibold flex justify-center gap-4 items-center" to='/about'>LEARN MORE<i className="fa-solid fa-arrow-right"></i></Link>
               </div>
             </div>
           </div>
@@ -44,7 +45,7 @@ const Page3 = () => {
                 <div className="text-base font-normal">Use for lifting Heavy objects</div>
               </div>
               <div className="w-full">
-              <button className="h-12 w-full border-2 border-gray-200 shadow-2xl font-semibold flex justify-center gap-4 items-center">LEARN MORE<i className="fa-solid fa-arrow-right"></i></button>
+              <Link className="h-12 w-full border-2 border-gray-200 shadow-2xl font-semibold flex justify-center gap-4 items-center" to="/about">LEARN MORE<i className="fa-solid fa-arrow-right"></i></Link>
               </div>
             </div>
           </div>
@@ -55,15 +56,15 @@ const Page3 = () => {
                 <div className="text-base font-normal">Use for lifting Heavy objects</div>
               </div>
               <div className="w-full">
-                <button className="h-12 w-full border-2 border-gray-200 shadow-2xl font-semibold flex justify-center gap-4 items-center">LEARN MORE<i className="fa-solid fa-arrow-right"></i></button>
+                <Link className="h-12 w-full border-2 border-gray-200 shadow-2xl font-semibold flex justify-center gap-4 items-center" to="/about">LEARN MORE<i className="fa-solid fa-arrow-right"></i></Link>
               </div>
             </div>
           </div>
         </div>
         <div>
-          <button className="border-2 font-semibold text-base mb-10 border-yellow-500 bg-yellow-500 w-36 h-14 text-white shadow-2xl">
+          <Link className="font-semibold border-yellow-500 bg-yellow-500 transition-colors duration-300 hover:bg-yellow-600 rounded-lg w-36 h-14 text-white p-3" to='/services'>
             MORE SERVICES
-          </button>
+          </Link>
         </div>
       </div>
     </>

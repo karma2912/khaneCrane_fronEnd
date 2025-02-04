@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   const [isSent, setIsSent] = useState(false); // State to track if the message is sent
   const [isSubmitting, setIsSubmitting] = useState(false); // State to track form submission
 

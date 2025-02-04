@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import khanCrane from './khanCrane1.jpg';
+import { Link } from 'react-router-dom';
 
 const Page1 = () => {
   useEffect(() => {
@@ -14,6 +15,10 @@ const Page1 = () => {
       imageElement.classList.remove('translate-x-10', 'opacity-0');
       imageElement.classList.add('translate-x-0', 'opacity-100');
     }, 100);
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
   return (
@@ -36,9 +41,9 @@ const Page1 = () => {
           </div>
         </div>
         <div className='pt-10 animate-fade-in opacity-0 transition-opacity duration-1000 delay-700'>
-          <button className='border-2 border-yellow-500 bg-yellow-500 w-36 h-14 rounded-lg text-white hover:bg-yellow-600 transition-colors duration-300'>
+          <Link  className='h-14 w-36 bg-yellow-500 p-3 transition-colors duration-300 hover:bg-yellow-600 rounded-lg' to='/about'>
             LEARN MORE
-          </button>
+          </Link>
         </div>
       </div>
 

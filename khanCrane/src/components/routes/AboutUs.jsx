@@ -22,6 +22,9 @@ const fadeInRight = {
 };
 
 const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
     <div className="min-h-screen w-full bg-white text-gray-800 py-20 px-4 md:px-12">
       {/* Heading Section */}

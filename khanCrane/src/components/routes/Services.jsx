@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import faranaCrane from "../pages/faranaCrane.jpg";
 import forkliftCrane from "../pages/forkLift.webp";
@@ -23,6 +24,9 @@ const services = [
 ];
 
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
     <div className="min-h-screen w-full text-white bg-gray-900">
       {/* Header Section */}
