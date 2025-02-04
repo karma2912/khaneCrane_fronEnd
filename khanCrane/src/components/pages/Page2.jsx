@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import kcImg from "./khanCrane2.jpg";
+import Accordion from "./Accordian";
 
 const Page2 = () => {
   const [toggle1, setToggle1] = useState("hidden");
@@ -82,91 +83,8 @@ const Page2 = () => {
             </div>
           </div>
 
-          {/* Accordion Section */}
-          <div className="pt-10 mb-10 md:w-[40rem] w-[20rem]">
-            <div id="accordion-collapse" data-accordion="collapse">
-              {/* Accordion Item 1 */}
-              <h2 id="accordion-collapse-heading-1">
-                <button
-                  type="button"
-                  className="flex items-center justify-between w-full p-5 font-medium text-gray-500 border border-gray-200 rounded-t-xl hover:bg-gray-100"
-                  onClick={toggleButton1}
-                >
-                  <span>What is better in KhanCranes?</span>
-                  <svg className="w-3 h-3 rotate-180 shrink-0" viewBox="0 0 10 6">
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 5 5 1 1 5"
-                    />
-                  </svg>
-                </button>
-              </h2>
-              <div
-                className={`${toggle1} transition-all duration-500 overflow-hidden`}
-              >
-                <div className="p-5 border border-gray-200">
-                  <p className="mb-2 text-gray-500">Bata Bhai kya likhu isme</p>
-                </div>
-              </div>
-
-              {/* Accordion Item 2 */}
-              <h2 id="accordion-collapse-heading-2">
-                <button
-                  type="button"
-                  className="flex items-center justify-between w-full p-5 font-medium text-gray-500 border border-gray-200 hover:bg-gray-100"
-                  onClick={toggleButton2}
-                >
-                  <span>Ye bhi bata?</span>
-                  <svg className="w-3 h-3 rotate-180 shrink-0" viewBox="0 0 10 6">
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 5 5 1 1 5"
-                    />
-                  </svg>
-                </button>
-              </h2>
-              <div
-                className={`${toggle2} transition-all duration-500 overflow-hidden`}
-              >
-                <div className="p-5 border border-gray-200">
-                  <p className="mb-2 text-gray-500">Samjha</p>
-                </div>
-              </div>
-
-              {/* Accordion Item 3 */}
-              <h2 id="accordion-collapse-heading-3">
-                <button
-                  type="button"
-                  className="flex items-center justify-between w-full p-5 font-medium text-gray-500 border border-gray-200 hover:bg-gray-100"
-                  onClick={toggleButton3}
-                >
-                  <span>Or Ye Bhi?</span>
-                  <svg className="w-3 h-3 rotate-180 shrink-0" viewBox="0 0 10 6">
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 5 5 1 1 5"
-                    />
-                  </svg>
-                </button>
-              </h2>
-              <div
-                className={`${toggle3} transition-all duration-500 overflow-hidden`}
-              >
-                <div className="p-5 border border-gray-200">
-                  <p className="mb-2 text-gray-500">Thanku</p>
-                </div>
-              </div>
-            </div>
-          </div> {/* End of Accordion */}
+          <Accordion/>
+          
         </div>
       </div>
     </div>
