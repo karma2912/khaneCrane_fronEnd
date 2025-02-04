@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 const Contact = () => {
   useEffect(() => {
@@ -49,19 +49,28 @@ const Contact = () => {
             frameBorder="0"
             marginHeight="0"
             marginWidth="0"
-            title="map"
+            title="Google Map Location"
             scrolling="no"
-            src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%B0zmir+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+            src="https://maps.google.com/maps?q=Room%20No%20Cen-288,%20Khan%20Galli,%20Charkop%20Kandivali%20West,%20Mumbai,%20Pin%20400067&hl=en&z=16&output=embed"
             style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
           ></iframe>
         </div>
         <div className="container px-5 py-24 mx-auto flex">
           <div className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
-            <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
-            <p className="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
+            <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
+              Contact Us
+            </h2>
+            <p className="leading-relaxed mb-5 text-gray-600">
+              Our team will contact you in under 24 Hours
+            </p>
             <form onSubmit={onSubmit}>
               <div className="relative mb-4">
-                <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
+                <label
+                  htmlFor="email"
+                  className="leading-7 text-sm text-gray-600"
+                >
+                  Email
+                </label>
                 <input
                   type="email"
                   id="email"
@@ -71,7 +80,12 @@ const Contact = () => {
                 />
               </div>
               <div className="relative mb-4">
-                <label htmlFor="message" className="leading-7 text-sm text-gray-600">Message</label>
+                <label
+                  htmlFor="message"
+                  className="leading-7 text-sm text-gray-600"
+                >
+                  Message
+                </label>
                 <textarea
                   id="message"
                   name="message"
@@ -82,17 +96,25 @@ const Contact = () => {
               <button
                 type="submit"
                 className={`text-white ${
-                  isSubmitting || isSent ? "bg-yellow-600 cursor-not-allowed" : "bg-yellow-500 hover:bg-yellow-600"
+                  isSubmitting || isSent
+                    ? "bg-yellow-600 cursor-not-allowed"
+                    : "bg-yellow-500 hover:bg-yellow-600"
                 } border-0 py-2 px-6 focus:outline-none rounded text-lg transition-colors duration-200`}
                 disabled={isSubmitting || isSent} // Disable the button when submitting or after sending
               >
-                {isSubmitting ? "Sending..." : isSent ? "Message Sent!" : "Send Message"}
+                {isSubmitting
+                  ? "Sending..."
+                  : isSent
+                  ? "Message Sent!"
+                  : "Send Message"}
               </button>
               {isSent && (
-                <p className="text-xs text-green-500 mt-3">Your message has been sent successfully!</p>
+                <p className="text-xs text-green-500 mt-3">
+                  Your message has been sent successfully!
+                </p>
               )}
             </form>
-            <p className="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
+            
           </div>
         </div>
       </section>
