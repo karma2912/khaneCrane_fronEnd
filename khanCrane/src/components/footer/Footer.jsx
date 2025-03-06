@@ -12,7 +12,6 @@ const Footer = () => {
         viewport={{ once: true }}
         className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-7"
       >
-        {/* Company Info */}
         <div>
           <h2 className="text-2xl font-bold">Khan Crane</h2>
           <p className="mt-3 text-gray-500">
@@ -26,7 +25,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Quick Links */}
         <div>
           <h3 className="text-xl font-semibold">Quick Links</h3>
           <ul className="mt-3 space-y-2">
@@ -37,7 +35,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact Info */}
         <div>
           <h3 className="text-xl font-semibold">Contact Us</h3>
           <div className="mt-3 space-y-2">

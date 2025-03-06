@@ -4,12 +4,12 @@ const Contact = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
-  const [isSent, setIsSent] = useState(false); // State to track if the message is sent
-  const [isSubmitting, setIsSubmitting] = useState(false); // State to track form submission
+  const [isSent, setIsSent] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setIsSubmitting(true); // Disable the button and show loading state
+    setIsSubmitting(true);
 
     const formData = new FormData(event.target);
     formData.append("access_key", "70aef623-8b37-4dbf-8ccf-b508057e5c31");
@@ -29,13 +29,13 @@ const Contact = () => {
 
       if (res.success) {
         console.log("Success", res);
-        setIsSent(true); // Show "Message Sent!" confirmation
-        event.target.reset(); // Clear the form data
+        setIsSent(true); 
+        event.target.reset();
       }
     } catch (error) {
       console.error("Error:", error);
     } finally {
-      setIsSubmitting(false); // Re-enable the button
+      setIsSubmitting(false);
     }
   };
 
@@ -100,7 +100,7 @@ const Contact = () => {
                     ? "bg-yellow-600 cursor-not-allowed"
                     : "bg-yellow-500 hover:bg-yellow-600"
                 } border-0 py-2 px-6 focus:outline-none rounded text-lg transition-colors duration-200`}
-                disabled={isSubmitting || isSent} // Disable the button when submitting or after sending
+                disabled={isSubmitting || isSent} 
               >
                 {isSubmitting
                   ? "Sending..."
